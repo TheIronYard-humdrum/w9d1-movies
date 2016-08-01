@@ -1,0 +1,22 @@
+<div class="card">
+  <div class="card-image">
+    <figure class="image">
+      <img ng-src="{{vm.movie.Poster}}">
+    </figure>
+  </div>
+  <div class="card-content">
+    <div class="media">
+      <div class="media-left">
+        <p class="title is-3">{{ vm.movie.Rated }}</p>
+      </div>
+      <div class="media-content">
+        <p class="title is-5">{{ vm.movie.Title}}</p>
+        <p class="subtitle is-6">Released: {{ vm.movie.Released }}</p>
+      </div>
+    </div>
+
+    <div class="content">
+      <p name='award' class="hidden award">{{ vm.movie.Awards }}</p>
+    </div>
+  </div>
+</div>
