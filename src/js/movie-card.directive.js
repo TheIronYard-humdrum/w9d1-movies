@@ -14,7 +14,7 @@ function MovieCard () {
     },
     link: function (scope, element, attrs) {
       element.on('mouseover', function () {
-        if (scope.vm.movie.Awards !== undefined) {
+        if (scope.vm.movie.Awards !== "N/A") {
           let p = element.find('p')
           p = p[3];
           p.classList = 'award ng-binding'
